@@ -4,13 +4,12 @@ import CustomCard from "./CustomCard";
 
 const CardWrapper = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const cards = state.filter(el => !el.isDeleted);
-
   const disableDelete = state.length <= 1;
+
   return(
     <div className="container">
       {
-        cards.map((card) => (
+        state.map((card) => (
           <CustomCard
             key={card.id}
             card={card}

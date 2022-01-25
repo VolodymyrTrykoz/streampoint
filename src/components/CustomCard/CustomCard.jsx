@@ -14,8 +14,8 @@ const { TextArea } = Input;
 
 const CustomCard = ({card, dispatch, disableDelete}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [textColor, setTextColor] = useState('#0E2748');
-  const [textBodyColor, setTextBodyColor] = useState('#0E2748');
+  const [textColor, setTextColor] = useState('');
+  const [textBodyColor, setTextBodyColor] = useState('');
   const [inputTitle, setInputTitle] = useState('');
   const [inputBodyText, setInputBodyText] = useState('');
   const { TabPane } = Tabs;
